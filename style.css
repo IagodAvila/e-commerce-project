@@ -51,7 +51,7 @@ button.normal{
     cursor: pointer;
     border: none;
     outline: none;
-    transition: 0.2s;
+    transition: all 0.3s ease;
 }
 
 button.white{
@@ -102,6 +102,7 @@ body {
     font-weight: 600;
     color: #1a1a1a;
     transition: 0.3s ease;
+    position: relative;
 }
 
 #navbar li a:hover, 
@@ -109,17 +110,22 @@ body {
     color: #088178;
 }
 
-#navbar li a.active::after,
-#navbar li a:hover::after {
+#navbar li a::after{
     content: "";
-    width: 30%;
+    width: 0;
     height: 2px;
-    background-color: #088178;
+    background: #088178;
     position: absolute;
     bottom: -4px;
-    left: 20px;
-    
+    left: 0;
+    transition: 0.3s;
 }
+
+#navbar li a:hover::after,
+#navbar li a.active::after{
+    width: 100%;
+}
+
 
 #mobile {
     display: none;
@@ -158,6 +164,11 @@ body {
     cursor: pointer;
     font-weight: 700;
     font-size: 15px;
+}
+
+#hero button:hover{
+    transform: translateY(-2px);
+    transition: 0.2s ease;
 }
 
 #feature {
@@ -235,9 +246,9 @@ body {
     border: 1px solid #cce7d0;
     border-radius: 25px;
     cursor: pointer;
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     margin: 15px 0;
-    transition: 0.2s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
 }
 
@@ -249,6 +260,7 @@ body {
 #product1 .pro:hover {
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
     transition: 0.2s ease;
+    transform: translateY(-10px);
 }
 
 #product1 .pro .des {
@@ -324,6 +336,7 @@ body {
 }
 
 #banner button:hover{
+    transform: translateY(-2px);
     background-color: #088178;
     color: #fff;
 }
@@ -869,8 +882,8 @@ footer .copyright {
 }
 
 #form-details button:hover{
-    transform: scale(1.1
-    )
+    transform: translateY(-2px);
+    transform: scale(1.1)
 }
 
 #form-details .people{
@@ -952,6 +965,7 @@ footer .copyright {
         display: none;
 }
     #navbar li {
+        position: relative;
         margin-bottom: 25px;
     }
 

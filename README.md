@@ -39,3 +39,41 @@ Este projeto foi desenvolvido com o objetivo de:
 - Aprender boas práticas de organização de código
 
 ## 📂 Estrutura do projeto
+
+e-commerce-project
+│
+├── img
+├── index.html
+├── shop.html
+├── product.html
+├── cart.html
+├── style.css
+└── script.js
+
+
+## 📱 Responsividade
+
+O layout foi desenvolvido para funcionar em:
+
+- Desktop
+- Tablet
+- Mobile
+
+## 📚 Aprendizados
+
+Durante o desenvolvimento deste projeto foi possível aprofundar conhecimentos em:
+
+- Estruturação semântica com HTML
+- Layouts com Flexbox e Grid
+- Estilização moderna com CSS
+- Organização de componentes de interface
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Iago d'Avila**
+
+🔗 GitHub  
+https://github.com/IagodAvila
+
+🔗 LinkedIn  
+https://www.linkedin.com/in/iago-d-avila-851399332/

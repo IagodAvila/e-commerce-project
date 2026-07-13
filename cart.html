@@ -16,7 +16,7 @@
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     />
   </head>
-  <body>
+  <body data-page="cart">
     <section id="header">
       <a href=""><img src="img/logo.png" class="logo" alt="logo" /></a>
 
@@ -56,32 +56,7 @@
                     <td>Total</td>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td><i class="far fa-times-circle"><a href="#"></a></i></td>
-                    <td><img src="img/products/f1.jpg" alt=""></td>
-                    <td>Cartoon Astronaut T-Shirt</td>
-                    <td>R$118.19</td>
-                    <td><input type="number" value="1"></td>
-                    <td>R$118.19</td>
-                </tr>
-                <tr>
-                    <td><i class="far fa-times-circle"><a href="#"></a></i></td>
-                    <td><img src="img/products/f2.jpg" alt=""></td>
-                    <td>Cartoon Astronaut T-Shirt</td>
-                    <td>R$118.19</td>
-                    <td><input type="number" value="1"></td>
-                    <td>R$118.19</td>
-                </tr>
-                <tr>
-                    <td><i class="far fa-times-circle"><a href="#"></a></i></td>
-                    <td><img src="img/products/f3.jpg" alt=""></td>
-                    <td>Cartoon Astronaut T-Shirt</td>
-                    <td>R$118.19</td>
-                    <td><input type="number" value="1"></td>
-                    <td>R$118.19</td>
-                </tr>
-            </tbody>
+            <tbody id="cart-items"></tbody>
         </table>
     </section>
 
@@ -99,15 +74,15 @@
             <table>
                 <tr>
                     <td>Total do Carrinho</td>
-                    <td>R$ 335</td>
+                    <td id="cart-subtotal">R$ 0,00</td>
                 </tr>
                 <tr>
                     <td>Envio</td>
-                    <td>Grátis</td>
+                    <td id="cart-shipping">—</td>
                 </tr>
                 <tr>
                     <td><strong>Total</strong></td>
-                    <td><strong>R$ 335</strong></td>
+                    <td id="cart-total"><strong>R$ 0,00</strong></td>
                 </tr>
             </table>
             <button class="normal">Continue para o pagamento</button>

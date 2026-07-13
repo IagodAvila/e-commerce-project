@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
   </head>
-  <body>
+  <body data-page="product">
     <section id="header">
       <a href=""><img src="img/logo.png" class="logo" alt="logo" /></a>
 
@@ -37,113 +37,15 @@
     <section id="prodetails" class="section-p1">
         <div class="single-pro-image">
             <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
-            
-            <div class="small-img-group">
-                <div class="small-img-col">
-                    <img src="img/products/f1.jpg" width="100%" class="small-img" alt="">
-                </div>
-                <div class="small-img-col">
-                    <img src="img/products/f2.jpg" width="100%" class="small-img" alt="">
-                </div>
-                <div class="small-img-col">
-                    <img src="img/products/f3.jpg" width="100%" class="small-img" alt="">
-                </div>
-                <div class="small-img-col">
-                    <img src="img/products/f4.jpg" width="100%" class="small-img" alt="">
-                </div>
-            </div>
         </div>
 
-        <div class="single-pro-details">
-            <h6>Home / T-Shirt</h6>
-            <h4>Men's Fashion T Shirt</h4>
-            <h2>R$139.00</h2>
-            <select >
-                <option>Selecione o tamanho</option>
-                <option>XXG</option>
-                <option>XG</option>
-                <option>Grande</option>
-                <option>Medio</option>
-                <option>Pequeno</option>
-            </select>
-            <input type="number" value="1">
-            <button class="normal">Adicionar ao Carrinho</button>
-            <h4>Detalhes do Produto</h4>
-            <span>
-                A camiseta Gildan Ultra Cotton é feita com um tecido encorpado de 170 g/m² (6,0 oz/yd²) composto por 100% algodão. Este modelo clássico em malha jersey pré-encolhida proporciona conforto incomparável a cada uso. Com reforço na gola e nos ombros, gola com costura dupla sem costura lateral e disponível em diversas cores, ela oferece tudo isso em um pacote que chama a atenção.
-            </span>
-        </div>
+        <div class="single-pro-details" id="product-details"></div>
     </section>
 
     <section id="product1" class="section-p1">
         <h2>Produtos em Destaque</h2>
         <p>Coleção de Verão - New Modern Design</p>
-        <div class="pro-container">
-            <div class="pro">
-                <img src="img/products/f1.jpg" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut Tshirts</h5>
-                    <div class="star">
-                       <i class=" fas fa-star"></i>
-                       <i class=" fas fa-star"></i>
-                       <i class=" fas fa-star"></i>
-                       <i class=" fas fa-star"></i>
-                       <i class=" fas fa-star"></i>
-                    </div>
-                    <h4>R$78</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro">
-                <img src="img/products/f2.jpg" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut Tshirts</h5>
-                    <div class="star">
-                       <i class=" fas fa-star"></i>
-                       <i class=" fas fa-star"></i>
-                       <i class=" fas fa-star"></i>
-                       <i class=" fas fa-star"></i>
-                       <i class=" fas fa-star"></i>
-                    </div>
-                    <h4>R$78</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro">
-                <img src="img/products/f3.jpg" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut Tshirts</h5>
-                    <div class="star">
-                       <i class=" fas fa-star"></i>
-                       <i class=" fas fa-star"></i>
-                       <i class=" fas fa-star"></i>
-                       <i class=" fas fa-star"></i>
-                       <i class=" fas fa-star"></i>
-                    </div>
-                    <h4>R$78</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro">
-                <img src="img/products/f4.jpg" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut Tshirts</h5>
-                    <div class="star">
-                       <i class=" fas fa-star"></i>
-                       <i class=" fas fa-star"></i>
-                       <i class=" fas fa-star"></i>
-                       <i class=" fas fa-star"></i>
-                       <i class=" fas fa-star"></i>
-                    </div>
-                    <h4>R$78</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-        </div>
+        <div class="pro-container" id="related-products"></div>
     </section>
 
     <section id="newsletter" class="section-p1 section-m1">
@@ -210,25 +112,6 @@
             <p>Iago d'Avila - E-commerce & Interactive Layout</p>
         </div>
     </footer>
-
-    <script>
-        var MainImg = document.getElementById("MainImg");
-        var smallimg = document.getElementsByClassName("small-img");
-
-        smallimg[0].onclick = function(){
-            MainImg.src = smallimg[0].src;
-        }
-        smallimg[1].onclick = function(){
-            MainImg.src = smallimg[1].src;
-        }
-        smallimg[2].onclick = function(){
-            MainImg.src = smallimg[2].src;
-        }
-        smallimg[3].onclick = function(){
-            MainImg.src = smallimg[3].src;
-        }
-
-    </script>
 
   </body>
   <script src="script.js"></script>

@@ -299,6 +299,75 @@ body {
   position: absolute;
   bottom: 20px;
   right: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#product1 .pro .cart:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 12px rgba(8, 129, 120, 0.2);
+}
+
+#cart-toast {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #088178;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 999px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transform: translateY(12px);
+  transition: all 0.2s ease;
+  z-index: 1000;
+}
+
+#cart-toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#lg-bag a {
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background-color: #ef3636;
+  color: #fff;
+  font-size: 11px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-state {
+  padding: 30px 0;
+  text-align: center;
+  color: #465b52;
+}
+
+.remove-item {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #ef3636;
+  font-size: 16px;
+}
+
+.product-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 15px 0 20px;
 }
 
 #banner {
@@ -599,14 +668,10 @@ footer .copyright {
   margin-right: 50px;
 }
 
-.small-img-group {
-  display: flex;
-  justify-content: space-between;
-}
-
-.small-img-col {
-  flex-basis: 24%;
-  cursor: pointer;
+#prodetails .single-pro-image img {
+  border-radius: 20px;
+  object-fit: cover;
+  max-height: 500px;
 }
 
 #prodetails .single-pro-details {

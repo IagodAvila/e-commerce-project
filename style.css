@@ -664,14 +664,28 @@ footer .copyright {
 }
 
 #prodetails .single-pro-image {
-  width: 40%;
+  width: 30%;
   margin-right: 50px;
+  overflow: hidden;
+  border-radius: 30px;
+  background: #f7f7f7;
+  padding: 10px;
+  border: 2px solid #dce7e3;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
 #prodetails .single-pro-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  transition: transform 0.35s ease;
   border-radius: 20px;
-  object-fit: cover;
-  max-height: 500px;
+}
+
+#prodetails .single-pro-image:hover img {
+  transform: scale(1.08);
 }
 
 #prodetails .single-pro-details {
@@ -691,7 +705,7 @@ footer .copyright {
   display: block;
   padding: 5px 10px;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: whitesmoke;
 }
 
